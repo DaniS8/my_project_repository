@@ -23,6 +23,15 @@ library("dplyr")
 ```{r, load-data}
 # Import text file from the documents computer folder and view data
 MD_AY_1920_GeneralComments <- read_excel("~/Documents/ISOM550/MD-AY19-20-GeneralCommentscopy.xlsx")
+
+set.seed(124125)
+n <- nrow(MD_AY_1920_GeneralComments)
+new_dat <- MD_AY_1920_GeneralComments
+for(j in 1:ncol(MD_AY_1920_GeneralComments)){
+shuffle_idx <- sample(1:n)
+new_dat[,j] <- MD_AY_1920_GeneralComments[shuffle_idx, j]
+}
+
 # Create a variable for the comments section of the MD AY 19-20 General Comments dataset
 Comments <- MD_AY_1920_GeneralComments$Comments
 # Load the data as a corpus
