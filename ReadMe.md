@@ -1,17 +1,17 @@
 # My Project
-For my project, I will analyze performance data using R. 
+For my project, I will analyze performance data using R. To analyze this data, you will load it, clean it, build a matrix and then plot the data. 
 There are some R packages that need to be installed in order to properly analyze this data.
 
-```{r}
-
-installed_pkgs <- row.names(installed.packages())
-pkgs <- c("readxl", "tm", "SnowballC", "wordcloud", "RColorBrewer", "syuzhet", "sentimentr", "ggplot2", "dplyr")
-for(p in pkgs){
-	if(!(p %in% install_pkgs)){
-		install.packages(p)
-	}
-}
-```
+You will need to install the following packages in R:
+install.packages("readxl")  for reading excel doc
+install.packages("tm")   for text mining
+install.packages("SnowballC") for text stemming
+install.packages("wordcloud") for word-cloud generator 
+install.packages("RColorBrewer") for color palettes
+install.packages("syuzhet") for sentiment analysis
+install.packages("sentimentr")  for sentiment analysis
+install.packages("ggplot2") for plotting graphs
+install.packages("dplyr")
 
 
 
