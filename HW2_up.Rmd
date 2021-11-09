@@ -22,7 +22,7 @@ library("dplyr")
 
 ```{r, load-data}
 # Import text file from the documents computer folder and view data
-MD_AY_1920_GeneralComments <- read_excel("~/Documents/ISOM550/MD-AY19-20-GeneralCommentscopy.xlsx")
+MD_AY_1920_GeneralComments <- read_excel("Data/MD-AY19-20-GeneralCommentscopy.xlsx")
 
 set.seed(124125)
 n <- nrow(MD_AY_1920_GeneralComments)
