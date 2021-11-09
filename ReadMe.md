@@ -19,3 +19,7 @@ To execute the analysis, from the project folder you can run:
 Rscript -e "rmarkdown::render('HW2_up.Rmd')"
 ```
 
+To produce the report you will need the following code:
+```bash
+make report
+```
