@@ -16,10 +16,15 @@ You will need to install the following packages in R: "readxl"  for reading exce
 To execute the analysis, from the project folder you can run:
 
 ```bash
-Rscript -e "rmarkdown::render('HW2_up.Rmd')"
+Rscript -e "rmarkdown::render('Final_Report.Rmd')"
 ```
 
 To produce the report you will need the following code:
 ```bash
 make report
 ```
+
+# Docker Information
+To pull image: Docker pull dsargeant8/rocker_and_tidyverse 
+To make directory: mkdir DockerImage
+To run: docker run -v absolute file path/DockerImage: /project/DockerImage dsargeant8/rocker_and_tidyverse 
