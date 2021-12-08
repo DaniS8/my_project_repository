@@ -27,6 +27,6 @@ make report
 # Docker Information
 ```bash
 To pull image: Docker pull dsargeant8/rocker_and_tidyverse 
-To make directory: mkdir Output
-To run: docker run -v absolute file path/Output: /project/Output dsargeant8/rocker_and_tidyverse 
+To make directory: mkdir output
+To run: docker run -v absolute_file_path/output:/project/output dsargeant8/rocker_and_tidyverse 
 ```
